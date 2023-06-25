@@ -350,7 +350,7 @@ follow as below to work with WebDriverManager
 ## Virtualization vs Containerization
 - Container will use the HOST OS
 - Containers will only need few binaries and libs, other than these, the container will consume all other things from the host os
-- Therby spinning up and spinning down is very faster
+- There by spinning up and spinning down is very faster
 
 ## Creating Driver Factory
 - Create a DriverFactory class to avoid clutter in the Driver classs
@@ -648,7 +648,7 @@ give its parent tag as well as - //div[text()='Echo & Alexa']/parent::a
 - Implementation of Dynamic Elements which is only possible in normal approach and is not possible using Page Factory
 - using this Dynamic Elements approach, I can construct my Web Element [here - xpath] DYNAMICALLY at RUNTIME,
 with this I don't have to create 10 new elements, rather I can do the job with only one line with the Dynamic Web Element Locator strategy
-- In the above case the scenario is, if only the text of the xpath changes, but all other xpath expression remains the same, I can pass the changing value at runtime rather than constructing the web element everytime
+- In the above case the scenario is, if only the text of the xpath changes, but all other xpath expression remains the same, I can pass the changing value at runtime rather than constructing the web element every time.
 - Not Possible using Page Factory
 
 ##### Explicit Wait

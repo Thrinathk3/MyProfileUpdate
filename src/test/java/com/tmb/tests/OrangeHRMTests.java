@@ -67,19 +67,6 @@ public final class OrangeHRMTests extends BaseTest {
 		
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 
 	
 }
