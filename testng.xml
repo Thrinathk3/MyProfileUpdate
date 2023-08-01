@@ -8,7 +8,7 @@
 			class-name="com.tmb.listeners.AnnotationTransformer" />
 	</listeners>
 
-	<test thread-count="1" name="Test" parallel="methods">
+	<test thread-count="4" name="Test" parallel="methods">
 		<classes>
 			<!-- <class name="com.tmb.tests.OrangeHRMTests" /> -->
 			<!-- <class name="com.tmb.tests.AmazonDemoTest"/>  -->

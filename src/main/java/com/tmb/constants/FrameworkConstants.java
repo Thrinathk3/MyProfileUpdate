@@ -26,7 +26,7 @@ public final class FrameworkConstants {
 	 */
 	private FrameworkConstants() {}
 	
-	private static final int EXPLICITWAIT = 10;
+	private static final int EXPLICITWAIT = 15;
 	private static final String RESOURCESPATH = System.getProperty("user.dir")+"/src/test/resources";
 	private static final String CHROMEDRIVERPATH = RESOURCESPATH+"/executables/chromedriver.exe";
 	private static final String GECKODRIVERPATH = RESOURCESPATH+"/executables/geckodriver.exe";
@@ -55,7 +55,7 @@ public final class FrameworkConstants {
 	 * @author Thrinath K
 	 * Jan 21, 2023
 	 * @return  If Override reports value in the 
-	 * property file is no,then the timestamp will be appended
+	 * property file is no,then the time stamp will be appended
 	 */
 	private static String createReportPath()  {
 		if(PropertyUtils.get(ConfigProperties.OVERRIDEREPORTS).equalsIgnoreCase("no")) {
