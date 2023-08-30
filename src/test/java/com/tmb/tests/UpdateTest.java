@@ -6,6 +6,7 @@ import java.util.Map;
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
 
+import com.tmb.utils.LogUtils;
 import com.tmb.annotations.FrameworkAnnotation;
 import com.tmb.enums.CategoryType;
 import com.tmb.pages.UpdatePage;
@@ -57,6 +58,7 @@ public class UpdateTest extends BaseTest{
 				.getText();
 		System.out.println("*************************************************\n*\t\t "+text+
 				"\t\t\t*\n*************************************************");
+		LogUtils.error("Driver session is not available" );
 
 		//Assertions.assertThat(date).isNotNull();
 		Assertions.assertThat(text).contains("Success");

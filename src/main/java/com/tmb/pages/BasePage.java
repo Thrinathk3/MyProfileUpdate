@@ -43,8 +43,8 @@ public class BasePage {
 		WebElement element =ExplicitWaitFactory.performExplicitWait(waitstrategy, by);
 		element.sendKeys(value);
 		if(elementname=="Password") {
-			log(PASS,elementname +" is entered successfully in "+elementname);
-			log(CONSOLE,elementname +" is entered successfully in "+elementname);
+			log(PASS,elementname +" ->***********<- is entered successfully in "+elementname);
+			log(CONSOLE,elementname +" ->***********<- is entered successfully in "+elementname);
 		}
 		else {
 			log(PASS,value +" is entered successfully in "+elementname);

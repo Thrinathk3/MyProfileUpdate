@@ -1,649 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="5" failed="4" skipped="2">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-25T20:38:35 IST" name="Suite" finished-at="2023-06-25T20:44:13 IST" duration-ms="337979">
+  <suite started-at="2023-08-23T10:01:56 IST" name="Suite" finished-at="2023-08-23T10:03:28 IST" duration-ms="92454">
     <groups>
     </groups>
-    <test started-at="2023-06-25T20:38:35 IST" name="Test" finished-at="2023-06-25T20:44:13 IST" duration-ms="337979">
-      <class name="com.tmb.tests.OrangeHRMTests">
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTests@c33b74f]" started-at="2023-06-25T20:38:38 IST" name="setUp" finished-at="2023-06-25T20:38:55 IST" duration-ms="17415" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@8dfe921]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTests@c33b74f]" started-at="2023-06-25T20:38:55 IST" name="loginLogoutTest" description="To check whether the user can successfully login and logout " data-provider="getData" finished-at="2023-06-25T20:39:06 IST" duration-ms="10563" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=amuthan, password=YWRtaW4xMjM=, browser=chrome, testname=loginLogoutTest, execute=yes, version=88.0.4324.96, menutext=, username=Admin}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.id: txtUsername (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.id: txtUsername (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at com.tmb.factories.ExplicitWaitFactory.performExplicitWait(ExplicitWaitFactory.java:47)
-at com.tmb.pages.BasePage.sendKeys(BasePage.java:43)
-at com.tmb.pages.OrangeHRMLoginPage.enterUserName(OrangeHRMLoginPage.java:18)
-at com.tmb.tests.OrangeHRMTests.loginLogoutTest(OrangeHRMTests.java:49)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtUsername"}
-  (Session info: chrome=114.0.5735.134)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-K42ITB2', ip: '192.168.1.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\tingu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2cffa67dc83a0a935355046cbbc61a8e
-*** Element info: {Using=id, value=txtUsername}
-at jdk.internal.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 19 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginLogoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.OrangeHRMTests@c33b74f]" started-at="2023-06-25T20:39:06 IST" name="tearDown" finished-at="2023-06-25T20:39:07 IST" duration-ms="544" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTests@c33b74f]" started-at="2023-06-25T20:39:07 IST" name="setUp" finished-at="2023-06-25T20:39:12 IST" duration-ms="5438" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@73163d48]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Process unexpectedly closed with status 0
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-K42ITB2', ip: '192.168.1.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: Driver
-remote stacktrace: ]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 0
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-K42ITB2', ip: '192.168.1.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: Driver
-remote stacktrace: 
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at com.tmb.factories.DriverFactory.getDriver(DriverFactory.java:74)
-at com.tmb.driver.Driver.initDriver(Driver.java:87)
-at com.tmb.tests.BaseTest.setUp(BaseTest.java:41)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTests@c33b74f]" started-at="2023-06-25T20:39:12 IST" name="loginLogoutTest" description="To check whether the user can successfully login and logout " data-provider="getData" finished-at="2023-06-25T20:39:12 IST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=testing mini bytes, password=YWRtaW4xMjM=, browser=firefox, testname=loginLogoutTest, execute=yes, version=69.0, menutext=, username=Admin}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Process unexpectedly closed with status 0
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-K42ITB2', ip: '192.168.1.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: Driver
-remote stacktrace: ]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 0
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-K42ITB2', ip: '192.168.1.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: Driver
-remote stacktrace: 
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at com.tmb.factories.DriverFactory.getDriver(DriverFactory.java:74)
-at com.tmb.driver.Driver.initDriver(Driver.java:87)
-at com.tmb.tests.BaseTest.setUp(BaseTest.java:41)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginLogoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.OrangeHRMTests@c33b74f]" started-at="2023-06-25T20:39:12 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1687705752866" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTests@c33b74f]" started-at="2023-06-25T20:39:12 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1687705752868" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginLogoutTest(java.util.Map)[pri:0, instance:com.tmb.tests.OrangeHRMTests@c33b74f]" started-at="2023-06-25T20:39:12 IST" name="loginLogoutTest" description="To check whether the user can successfully login and logout " data-provider="getData" finished-at="2023-06-25T20:39:12 IST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=subscribe, password=YWRtaW4xMjM=, browser=chrome, testname=loginLogoutTest, execute=yes, version=79.0.3945.117, menutext=, username=admin123}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Process unexpectedly closed with status 0
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-K42ITB2', ip: '192.168.1.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: Driver
-remote stacktrace: ]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Process unexpectedly closed with status 0
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-K42ITB2', ip: '192.168.1.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: driver.version: Driver
-remote stacktrace: 
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
-at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at com.tmb.factories.DriverFactory.getDriver(DriverFactory.java:74)
-at com.tmb.driver.Driver.initDriver(Driver.java:87)
-at com.tmb.tests.BaseTest.setUp(BaseTest.java:41)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginLogoutTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.OrangeHRMTests@c33b74f]" started-at="2023-06-25T20:39:12 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1687705752877" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.OrangeHRMTests@c33b74f]" started-at="2023-06-25T20:39:12 IST" name="setUp" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1687705752881" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-      </class> <!-- com.tmb.tests.OrangeHRMTests -->
-      <class name="com.tmb.tests.AmazonDemoTest">
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.AmazonDemoTest@3ce1e309]" started-at="2023-06-25T20:39:12 IST" name="setUp" finished-at="2023-06-25T20:39:32 IST" duration-ms="19769" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@67fe380b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="amazonTest(java.util.Map)[pri:0, instance:com.tmb.tests.AmazonDemoTest@3ce1e309]" started-at="2023-06-25T20:39:32 IST" name="amazonTest" description="To check whether the amazon test is working or not" data-provider="getData" finished-at="2023-06-25T20:39:32 IST" duration-ms="180" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=, password=, browser=chrome, testname=amazonTest, execute=yes, version=79.0.3945.117, menutext=Laptops, username=}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#nav\-hamburger\-menu"}
-  (Session info: chrome=114.0.5735.134)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-K42ITB2', ip: '192.168.1.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\tingu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64480}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3bc9996235c8b10967ad6d7c0f3df001
-*** Element info: {Using=id, value=nav-hamburger-menu}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#nav\-hamburger\-menu"}
-  (Session info: chrome=114.0.5735.134)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-K42ITB2', ip: '192.168.1.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\tingu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64480}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3bc9996235c8b10967ad6d7c0f3df001
-*** Element info: {Using=id, value=nav-hamburger-menu}
-at jdk.internal.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at com.tmb.pages.AmazonHomePage.clickHamburger(AmazonHomePage.java:22)
-at com.tmb.tests.AmazonDemoTest.amazonTest(AmazonDemoTest.java:47)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amazonTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.AmazonDemoTest@3ce1e309]" started-at="2023-06-25T20:39:33 IST" name="tearDown" finished-at="2023-06-25T20:39:34 IST" duration-ms="602" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.AmazonDemoTest@3ce1e309]" started-at="2023-06-25T20:39:34 IST" name="setUp" finished-at="2023-06-25T20:39:51 IST" duration-ms="17287" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@4a325eb9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="amazonTest(java.util.Map)[pri:0, instance:com.tmb.tests.AmazonDemoTest@3ce1e309]" started-at="2023-06-25T20:39:51 IST" name="amazonTest" description="To check whether the amazon test is working or not" data-provider="getData" finished-at="2023-06-25T20:39:51 IST" duration-ms="33" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=, password=, browser=chrome, testname=amazonTest, execute=yes, version=88.0.4324.96, menutext=Laptops, username=}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#nav\-hamburger\-menu"}
-  (Session info: chrome=114.0.5735.134)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-K42ITB2', ip: '192.168.1.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\tingu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 49a50dd89f1dba8831c721474bd6519c
-*** Element info: {Using=id, value=nav-hamburger-menu}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#nav\-hamburger\-menu"}
-  (Session info: chrome=114.0.5735.134)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-K42ITB2', ip: '192.168.1.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\tingu\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 49a50dd89f1dba8831c721474bd6519c
-*** Element info: {Using=id, value=nav-hamburger-menu}
-at jdk.internal.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at com.tmb.pages.AmazonHomePage.clickHamburger(AmazonHomePage.java:22)
-at com.tmb.tests.AmazonDemoTest.amazonTest(AmazonDemoTest.java:47)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amazonTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.AmazonDemoTest@3ce1e309]" started-at="2023-06-25T20:39:52 IST" name="tearDown" finished-at="2023-06-25T20:39:52 IST" duration-ms="460" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.AmazonDemoTest@3ce1e309]" started-at="2023-06-25T20:39:52 IST" name="setUp" finished-at="2023-06-25T20:40:21 IST" duration-ms="28854" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@3dedb4a6]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="amazonTest(java.util.Map)[pri:0, instance:com.tmb.tests.AmazonDemoTest@3ce1e309]" started-at="2023-06-25T20:40:21 IST" name="amazonTest" description="To check whether the amazon test is working or not" data-provider="getData" finished-at="2023-06-25T20:40:22 IST" duration-ms="733" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=, password=, browser=firefox, testname=amazonTest, execute=yes, version=69.0, menutext=Laptops, username=}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: #nav\-hamburger\-menu
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-K42ITB2', ip: '192.168.1.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4724, moz:profile: C:\Users\tingu\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a21b23f5-9276-49d5-8cbc-13461a312158
-*** Element info: {Using=id, value=nav-hamburger-menu}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #nav\-hamburger\-menu
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-K42ITB2', ip: '192.168.1.91', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 114.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230619081400, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4724, moz:profile: C:\Users\tingu\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: a21b23f5-9276-49d5-8cbc-13461a312158
-*** Element info: {Using=id, value=nav-hamburger-menu}
-at jdk.internal.reflect.GeneratedConstructorAccessor22.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at com.tmb.pages.AmazonHomePage.clickHamburger(AmazonHomePage.java:22)
-at com.tmb.tests.AmazonDemoTest.amazonTest(AmazonDemoTest.java:47)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amazonTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.AmazonDemoTest@3ce1e309]" started-at="2023-06-25T20:40:23 IST" name="tearDown" finished-at="2023-06-25T20:40:33 IST" duration-ms="9559" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.tmb.tests.AmazonDemoTest -->
+    <test started-at="2023-08-23T10:01:56 IST" name="Test" finished-at="2023-08-23T10:03:28 IST" duration-ms="92454">
       <class name="com.tmb.tests.UpdateTest">
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UpdateTest@6aba2b86]" started-at="2023-06-25T20:40:33 IST" name="setUp" finished-at="2023-06-25T20:40:54 IST" duration-ms="21481" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@57f64f5e]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="profileTest(java.util.Map)[pri:0, instance:com.tmb.tests.UpdateTest@6aba2b86]" started-at="2023-06-25T20:40:54 IST" name="profileTest" description="To check wheter resume update " data-provider="getData" finished-at="2023-06-25T20:41:39 IST" duration-ms="44802" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=, password=VGhyaW5hdGhAMTk5Nw==, browser=chrome, testname=profileTest, execute=yes, version=112.0.5615.138 , menutext=D:\\Thrinath_K.pdf, username=thrinath.k03@outlook.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- profileTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.UpdateTest@6aba2b86]" started-at="2023-06-25T20:41:39 IST" name="tearDown" finished-at="2023-06-25T20:41:40 IST" duration-ms="1194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UpdateTest@6aba2b86]" started-at="2023-06-25T20:41:40 IST" name="setUp" finished-at="2023-06-25T20:41:58 IST" duration-ms="17624" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@415e0bcb]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="profileTest(java.util.Map)[pri:0, instance:com.tmb.tests.UpdateTest@6aba2b86]" started-at="2023-06-25T20:41:58 IST" name="profileTest" description="To check wheter resume update " data-provider="getData" finished-at="2023-06-25T20:42:22 IST" duration-ms="24007" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{fname=, password=U2l2YUAxODE0, browser=chrome, testname=profileTest, execute=yes, version=112.0.5615.138, menutext=D:\\C_Siva_Sankar_Resume_Nw.pdf, username=sivalewi@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- profileTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.UpdateTest@6aba2b86]" started-at="2023-06-25T20:42:22 IST" name="tearDown" finished-at="2023-06-25T20:42:24 IST" duration-ms="1560" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UpdateTest@6aba2b86]" started-at="2023-06-25T20:42:24 IST" name="setUp" finished-at="2023-06-25T20:42:44 IST" duration-ms="20844" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UpdateTest@7fa98a66]" started-at="2023-08-23T10:01:57 IST" name="setUp" finished-at="2023-08-23T10:02:41 IST" duration-ms="43643" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -654,70 +18,70 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="profileTest(java.util.Map)[pri:0, instance:com.tmb.tests.UpdateTest@6aba2b86]" started-at="2023-06-25T20:42:44 IST" name="profileTest" description="To check wheter resume update " data-provider="getData" finished-at="2023-06-25T20:43:10 IST" duration-ms="25211" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UpdateTest@7fa98a66]" started-at="2023-08-23T10:01:57 IST" name="setUp" finished-at="2023-08-23T10:02:25 IST" duration-ms="28011" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{fname=, password=S2lyYW5AMTMxNw==, browser=chrome, testname=profileTest, execute=yes, version=112.0.5615.138, menutext=D:\\Resume-2.pdf, username=hemakiran131722@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- profileTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.UpdateTest@6aba2b86]" started-at="2023-06-25T20:43:10 IST" name="tearDown" finished-at="2023-06-25T20:43:10 IST" duration-ms="642" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UpdateTest@6aba2b86]" started-at="2023-06-25T20:43:10 IST" name="setUp" finished-at="2023-06-25T20:43:22 IST" duration-ms="11915" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@49d98dc5]]>
+                <![CDATA[[Ljava.lang.Object;@1d81e101]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="profileTest(java.util.Map)[pri:0, instance:com.tmb.tests.UpdateTest@6aba2b86]" started-at="2023-06-25T20:43:22 IST" name="profileTest" description="To check wheter resume update " data-provider="getData" finished-at="2023-06-25T20:43:43 IST" duration-ms="20434" status="PASS">
+        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UpdateTest@7fa98a66]" started-at="2023-08-23T10:01:57 IST" name="setUp" finished-at="2023-08-23T10:02:41 IST" duration-ms="43746" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{fname=, password=U2l2YUAxOTk5, browser=chrome, testname=profileTest, execute=yes, version=112.0.5615.138, menutext=D:\\CS_Sankar_QA.pdf, username=sivabtech17@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- profileTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.UpdateTest@6aba2b86]" started-at="2023-06-25T20:43:43 IST" name="tearDown" finished-at="2023-06-25T20:43:43 IST" duration-ms="546" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp([Ljava.lang.Object;)[pri:0, instance:com.tmb.tests.UpdateTest@6aba2b86]" started-at="2023-06-25T20:43:43 IST" name="setUp" finished-at="2023-06-25T20:43:50 IST" duration-ms="6566" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@2c30b71f]]>
+                <![CDATA[[Ljava.lang.Object;@ec50f54]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="profileTest(java.util.Map)[pri:0, instance:com.tmb.tests.UpdateTest@6aba2b86]" started-at="2023-06-25T20:43:50 IST" name="profileTest" description="To check wheter resume update " data-provider="getData" finished-at="2023-06-25T20:44:13 IST" duration-ms="23042" status="PASS">
+        <test-method signature="profileTest(java.util.Map)[pri:0, instance:com.tmb.tests.UpdateTest@7fa98a66]" started-at="2023-08-23T10:02:25 IST" name="profileTest" description="To check wheter resume update " data-provider="getData" finished-at="2023-08-23T10:03:21 IST" duration-ms="55747" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{fname=, password=VGhhbmt5b3VANTA=, browser=chrome, testname=profileTest, execute=yes, version=112.0.5615.138, menutext=D:\\Dileep_Resume.pdf, username=dileepkumarnalleri26@gmail.com}]]>
+                <![CDATA[{fname=, password=R2FuZXNoQDEyMzQ=, browser=chrome, testname=profileTest, execute=yes, version=112.0.5615, menutext=D:\\Naresh_Resume.pdf, username=nareshbabuind7@gmail.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- profileTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.UpdateTest@6aba2b86]" started-at="2023-06-25T20:44:13 IST" name="tearDown" finished-at="2023-06-25T20:44:13 IST" duration-ms="660" status="PASS">
+        <test-method signature="profileTest(java.util.Map)[pri:0, instance:com.tmb.tests.UpdateTest@7fa98a66]" started-at="2023-08-23T10:02:41 IST" name="profileTest" description="To check wheter resume update " data-provider="getData" finished-at="2023-08-23T10:03:27 IST" duration-ms="46810" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=, password=VGhyaW5hdGhAMTk5Nw==, browser=chrome, testname=profileTest, execute=yes, version=112.0.5615.138 , menutext=D:\\K_Thrinath_QA.pdf, username=thrinathk03@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profileTest -->
+        <test-method signature="profileTest(java.util.Map)[pri:0, instance:com.tmb.tests.UpdateTest@7fa98a66]" started-at="2023-08-23T10:02:41 IST" name="profileTest" description="To check wheter resume update " data-provider="getData" finished-at="2023-08-23T10:03:27 IST" duration-ms="45957" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{fname=, password=U2FuZHlAMTk5MQ==, browser=chrome, testname=profileTest, execute=yes, version=112.0.5615.138, menutext=D:\\Sandeep_Resume.pdf, username=sandeep.venkata19@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profileTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.UpdateTest@7fa98a66]" started-at="2023-08-23T10:03:21 IST" name="tearDown" finished-at="2023-08-23T10:03:21 IST" duration-ms="733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.UpdateTest@7fa98a66]" started-at="2023-08-23T10:03:27 IST" name="tearDown" finished-at="2023-08-23T10:03:27 IST" duration-ms="876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tmb.tests.UpdateTest@7fa98a66]" started-at="2023-08-23T10:03:27 IST" name="tearDown" finished-at="2023-08-23T10:03:28 IST" duration-ms="614" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+<configuration status="WARN">
+	<Appewnders>
+		<Console name="Console" taget="SYSTEM_OUT">
+			<PatternLayout pattern = "%d{HH:mm:ss.SSS} [%t] %-5level %loger{36} - %msg%n"/>
+		</Console>
+	</Appewnders>
+	<Loggers>
+		<Root level="WARN">
+			<AppenderRef ref="Console"/>
+		</Root>
+	</Loggers>
+</configuration>
