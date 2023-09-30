@@ -10,7 +10,7 @@
     <classes>
       <class name="com.tmb.tests.UpdateTest">
         <methods>
-          <include name="profileTest" invocation-numbers="1"/>
+          <include name="profileTest" invocation-numbers="2 0 1"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
