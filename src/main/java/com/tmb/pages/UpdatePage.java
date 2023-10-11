@@ -18,7 +18,9 @@ public final class UpdatePage extends BasePage{
 	private final By resumeUpdate = By.xpath("//input[@id='attachCV']");
 	private final By updatedOn = By.xpath("//div[@class='updateOn typ-14Regular']");
 	private final By text=By.xpath("//div[@class='cnt']/child::p[1]");
-
+	private final By resumeHeadlineEditBtn = By.xpath("//span[text()='Resume headline']/following-sibling::span");
+	private final By saveResumeHeadline = By.xpath("//button[text()='Save']");
+	
 	public UpdatePage clickLogin() {
 		click(login, WaitStrategy.PRESENCE, "Login Button");
 		return this;
@@ -47,6 +49,16 @@ public final class UpdatePage extends BasePage{
 		}catch(Exception e) {
 			
 		}
+		return this;
+	}
+	
+	public UpdatePage clickEditResumeHeadline() {
+		click(resumeHeadlineEditBtn,WaitStrategy.CLICKABLE, "Clickig Resume Headline button" );
+		return this;
+	}
+	
+	public UpdatePage saveResumeHeadline() {
+		click(saveResumeHeadline,WaitStrategy.CLICKABLE, "Saving Resume Headline......" );
 		return this;
 	}
 	

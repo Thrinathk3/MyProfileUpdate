@@ -54,6 +54,8 @@ public class UpdateTest extends BaseTest{
 				.clickLoginButton()
 				.clickProfile()
 				.viewProfile()
+				.clickEditResumeHeadline()
+				.saveResumeHeadline()
 				.updatingResume(data.get("menutext"))
 				.getText();
 		System.out.println("*************************************************\n*\t\t "+text+
