@@ -20,6 +20,7 @@ public final class UpdatePage extends BasePage{
 	private final By text=By.xpath("//div[@class='cnt']/child::p[1]");
 	private final By resumeHeadlineEditBtn = By.xpath("//span[text()='Resume headline']/following-sibling::span");
 	private final By saveResumeHeadline = By.xpath("//button[text()='Save']");
+	private final By dayofUpdate = By.xpath("//span[@class='typ-14Medium mod-date-val']");
 	
 	public UpdatePage clickLogin() {
 		click(login, WaitStrategy.PRESENCE, "Login Button");
@@ -39,21 +40,27 @@ public final class UpdatePage extends BasePage{
 		return this;
 	}
 	public UpdatePage clickProfile() {
-		click(menuOptions, WaitStrategy.CLICKABLE, "click Menu Option");
+		click(menuOptions, WaitStrategy.CLICKABLE, "Menu Option");
 		return this;
 	}
 	public UpdatePage viewProfile() {
-		click(viewProfile, WaitStrategy.CLICKABLE, "click viewProfile Option");
+		click(viewProfile, WaitStrategy.CLICKABLE, "viewProfile Option");
 		try {
-			click(popupClose, WaitStrategy.PRESENCE, "click Popup Close button");
+			click(popupClose, WaitStrategy.PRESENCE, "Popup Close button");
 		}catch(Exception e) {
 			
 		}
 		return this;
 	}
 	
+	public UpdatePage getDayofUpdate() {
+		String day =  getElementText(dayofUpdate, WaitStrategy.PRESENCE,"Day of Updated ");
+		System.out.println("Day of Updated ---> "+ day);
+		return this;
+	}
+	
 	public UpdatePage clickEditResumeHeadline() {
-		click(resumeHeadlineEditBtn,WaitStrategy.CLICKABLE, "Clickig Resume Headline button" );
+		click(resumeHeadlineEditBtn,WaitStrategy.CLICKABLE, "Resume Headline button" );
 		return this;
 	}
 	

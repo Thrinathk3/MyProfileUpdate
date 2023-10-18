@@ -65,9 +65,12 @@ public class BasePage {
 	
 	protected String getElementText(By by, WaitStrategy waitstrategy,String elementname) {
 		WebElement element =ExplicitWaitFactory.performExplicitWait(waitstrategy, by);
-		log(PASS, "getting text of the "+ elementname);
-		log(CONSOLE, "getting text of the "+ elementname);
-		return element.getText();		
+//		log(PASS, "getting text of the "+ elementname);
+//		log(CONSOLE, "getting text of the "+ elementname);
+		String text = element.getText();
+		log(PASS, "getting text : ***"+ text+ "*** at element of "+ elementname);
+		log(CONSOLE, "getting text : ***"+ text+ "*** at element of " + elementname);
+		return text;		
 	}
 
 	

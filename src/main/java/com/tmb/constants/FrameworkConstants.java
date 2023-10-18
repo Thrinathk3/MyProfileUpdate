@@ -26,7 +26,7 @@ public final class FrameworkConstants {
 	 */
 	private FrameworkConstants() {}
 	
-	private static final int EXPLICITWAIT = 15;
+	private static final int EXPLICITWAIT = 25;
 	private static final String RESOURCESPATH = System.getProperty("user.dir")+"/src/test/resources";
 	private static final String CHROMEDRIVERPATH = RESOURCESPATH+"/executables/chromedriver.exe";
 	private static final String GECKODRIVERPATH = RESOURCESPATH+"/executables/geckodriver.exe";

@@ -54,6 +54,7 @@ public class UpdateTest extends BaseTest{
 				.clickLoginButton()
 				.clickProfile()
 				.viewProfile()
+				.getDayofUpdate()
 				.clickEditResumeHeadline()
 				.saveResumeHeadline()
 				.updatingResume(data.get("menutext"))
